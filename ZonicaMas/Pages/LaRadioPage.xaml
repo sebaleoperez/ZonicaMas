@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="ZonicaMas.Pages.LaRadioPage"
+             Title="La radio">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <ScrollView Grid.Column="0" Grid.Row="0">
+            <Label VerticalOptions="FillAndExpand"
+                   HorizontalOptions="FillAndExpand"
+                   Margin="10"
+                   x:Name="lblText" />
+        </ScrollView>
+
+        <BoxView Grid.Row="1" Grid.Column="0" Color="Black" Margin="0" HeightRequest="2" HorizontalOptions="FillAndExpand" />
+
+        <Label Text="Ingresá a la web: www.zonica.com.ar" Margin="10" Grid.Row="2" Grid.Column="0" FontAttributes="Bold" FontSize="Large" TextColor="Black" VerticalOptions="Center" HorizontalOptions="Center">
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer Tapped="Url_Tapped" />
+            </Label.GestureRecognizers>
+        </Label>
+    </Grid>
+</ContentPage>

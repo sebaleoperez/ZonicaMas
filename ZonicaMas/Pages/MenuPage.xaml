@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ZonicaMas.Pages.MenuPage"
+             xmlns:controls="clr-namespace:ZonicaMas.Controls"
+             Title="Menu"
+             BackgroundColor="{StaticResource Contrast}">
+    <StackLayout Margin="0,60,0,0">
+        
+        <controls:MenuItem Text="Reproducir" IconSource="radio.png" PageId="0" />
+        <controls:MenuItem Text="La radio" IconSource="info.png" PageId="1" />
+        <controls:MenuItem Text="Compartir" IconSource="share.png" PageId="2" />
+    </StackLayout>
+</ContentPage>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ZonicaMas.Pages.SharePage"
+             Title="Compartir">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Row="0" Grid.Column="0" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Margin="20">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" FontAttributes="Bold" FontSize="Large" TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center" Text="Compartí en las redes!" />
+
+            <Image Grid.Row="1" Grid.Column="0" Margin="10" Aspect="AspectFit" HorizontalOptions="CenterAndExpand" VerticalOptions="Center" HeightRequest="128" Source="facebook.png" />
+            <Image Grid.Row="1" Grid.Column="1" Margin="10" Aspect="AspectFit" HorizontalOptions="CenterAndExpand" VerticalOptions="Center" HeightRequest="128" Source="twitter.png" />
+            <Image Grid.Row="1" Grid.Column="2" Margin="10" Aspect="AspectFit" HorizontalOptions="CenterAndExpand" VerticalOptions="Center" HeightRequest="128" Source="whatsapp.png" />
+            <Image Grid.Row="2" Grid.Column="0" Margin="10" Aspect="AspectFit" HorizontalOptions="CenterAndExpand" VerticalOptions="Center" HeightRequest="128" Source="message.png" />
+            <Image Grid.Row="2" Grid.Column="1" Margin="10" Aspect="AspectFit" HorizontalOptions="CenterAndExpand" VerticalOptions="Center" HeightRequest="128" Source="mail.png" />
+            <Image Grid.Row="2" Grid.Column="2" Margin="10" Aspect="AspectFit" HorizontalOptions="CenterAndExpand" VerticalOptions="Center" HeightRequest="128" Source="tumblr.png" />
+
+            <Grid.GestureRecognizers>
+                <TapGestureRecognizer Tapped="Share_Tapped" />
+            </Grid.GestureRecognizers>
+        </Grid>
+
+        <BoxView Grid.Row="1" Grid.Column="0" Color="Black" HeightRequest="2" HorizontalOptions="FillAndExpand" />
+
+        <Grid Grid.Row="2" Grid.Column="0" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Margin="20">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Image Grid.Row="0" Grid.Column="0"  Aspect="AspectFit" Margin="20" HorizontalOptions="Center" VerticalOptions="Center" Source="whatsapp.png" HeightRequest="64" />
+            <Label x:Name="lblWP" Grid.Row="0" Grid.Column="1" FontAttributes="Bold" FontSize="Large" TextColor="Black" VerticalOptions="Center" />
+
+            <Grid.GestureRecognizers>
+                <TapGestureRecognizer Tapped="Whatsapp_Tapped" />
+            </Grid.GestureRecognizers>
+        </Grid>
+    </Grid>
+</ContentPage>
