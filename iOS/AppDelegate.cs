@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-
+﻿using Firebase.Analytics;
 using Foundation;
 using UIKit;
 
@@ -12,11 +9,13 @@ namespace ZonicaMas.iOS
     {
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
-            global::Xamarin.Forms.Forms.Init();
+			global::Xamarin.Forms.Forms.Init();
+
+            Firebase.Core.App.Configure();
+            Analytics.LogEvent(EventNamesConstants.AppOpen, null);
+
             LoadApplication(new App());
-
-
-
+         
             return base.FinishedLaunching(app, options);
         }
     }
