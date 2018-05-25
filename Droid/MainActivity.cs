@@ -1,12 +1,8 @@
-﻿using System;
-
-using Android.App;
+﻿using Android.App;
 using Android.Content;
 using Android.Content.PM;
-using Android.Runtime;
-using Android.Views;
-using Android.Widget;
 using Android.OS;
+using Firebase.Analytics;
 
 namespace ZonicaMas.Droid
 {
@@ -17,6 +13,9 @@ namespace ZonicaMas.Droid
         {
             TabLayoutResource = Resource.Layout.Tabbar;
             ToolbarResource = Resource.Layout.Toolbar;
+            
+            var firebase = FirebaseAnalytics.GetInstance(this);
+            firebase.LogEvent(FirebaseAnalytics.Event.AppOpen, null);
 
             base.OnCreate(bundle);
 

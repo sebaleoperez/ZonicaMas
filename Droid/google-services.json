@@ -1,0 +1,67 @@
+{
+  "project_info": {
+    "project_number": "624848608922",
+    "firebase_url": "https://zonica-mas.firebaseio.com",
+    "project_id": "zonica-mas",
+    "storage_bucket": "zonica-mas.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:624848608922:android:6777fa732a3e7181",
+        "android_client_info": {
+          "package_name": "com.GrupoZonica.ZonicaMas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "624848608922-11fs0bpidkuvc73h4r8l76miclikdduc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.GrupoZonica.ZonicaMas",
+            "certificate_hash": "d62d4d002999f93b84f71e5c3151413eb9192e78"
+          }
+        },
+        {
+          "client_id": "624848608922-2ptrc5u8kp5nigjokhehj1fsei46lci0.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "624848608922-2ptrc5u8kp5nigjokhehj1fsei46lci0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACHywuI-tXx8b1t1DJyb6lX66HIJbE5ZM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "624848608922-at2r1u429b5uhdj17sntr3lvbae1mufq.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.GrupoZonica.ZonicaMas",
+                "app_store_id": "1355896980"
+              }
+            },
+            {
+              "client_id": "624848608922-2ptrc5u8kp5nigjokhehj1fsei46lci0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
